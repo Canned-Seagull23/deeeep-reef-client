@@ -5,6 +5,12 @@ let gameStarted = false;
 
 window.addEventListener("load", () => {
 
+    // Custom stylesheet
+    const customStyle = document.createElement("link");
+    customStyle.rel = "stylesheet";
+    customStyle.type = "text/css";
+    customStyle.href = ""
+
     // Watch for match start
     const btn = document.querySelector(".play");
     btn!.addEventListener("click", () => {
